@@ -10,5 +10,5 @@ Design credit: [Dribbble](https://dribbble.com/shots/20453169-Get-Started-Screen
 - [x] HTML Markup + CSS styling
 - [x] Mobile responsive
 - [x] Default validation with HTML 5 inputs
-- [ ] Add custom validation messages with Constraint Validation API.
+- [x] Add custom validation feedback with Constraint Validation API.
 - [ ] Incorporate `zod` and `react-hook-form` for more robust validation.

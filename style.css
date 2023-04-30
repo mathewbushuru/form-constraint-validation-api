@@ -129,8 +129,8 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
-.signupForm .inpSection label span{
-    color: var(--red);
+.signupForm .inpSection label span {
+  color: var(--red);
 }
 .signupForm .inpSection input {
   padding: 8px 12px;
@@ -162,10 +162,19 @@ body {
   line-height: 1.75;
   color: var(--raven);
 }
-.signupForm .loginLink span{
-    color: var(--sapphire);
-    font-weight: 600;
-    cursor: pointer;
+.signupForm .loginLink span {
+  color: var(--sapphire);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.error {
+  margin: 0;
+  padding: 0;
+  padding-left: 8px;
+  color: var(--red);
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
