@@ -26,7 +26,12 @@
             week.
           </p>
           <div class="reviewer">
-            <img src="https://placekitten.com/175" class="reviewerPic" />
+            <img
+              src="https://placekitten.com/175"
+              width="65px"
+              height="65px"
+              class="reviewerPic"
+            />
             <div class="reviewerName">Cleo Purrington</div>
             <div class="reviewerTitle">Product Designer</div>
           </div>
@@ -39,16 +44,16 @@
           <p>Create your account now</p>
         </div>
         <div class="inpSection">
-          <label for="fullName">Full name</label>
-          <input type="text" name="fullName" id="fullName" />
+          <label for="fullName"> Full name <span>*</span> </label>
+          <input type="text" name="fullName" id="fullName" required />
         </div>
         <div class="inpSection">
-          <label for="email">Email</label>
-          <input type="text" name="email" id="email" />
+          <label for="email">Email <span>*</span> </label>
+          <input type="email" name="email" id="email" required />
         </div>
         <div class="inpSection">
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password" />
+          <label for="password">Password <span>*</span> </label>
+          <input type="password" name="password" id="password" required />
         </div>
         <button type="submit">Sign up</button>
         <div class="loginLink">

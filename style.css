@@ -129,6 +129,9 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
+.signupForm .inpSection label span{
+    color: var(--red);
+}
 .signupForm .inpSection input {
   padding: 8px 12px;
   font: inherit;
