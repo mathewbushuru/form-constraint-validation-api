@@ -1,0 +1,12 @@
+:root {
+  --blue: #3c37ff; /* btn, logo*/
+  --catskillWhite: #f3f5f9; /* left bg*/
+  --clay: #2d3345; /* review bg*/
+  --ghost: #adb4c1; /* whole bg*/
+  --green: #35a026; /*success */
+  --raven: #787d87; /* left secondary text, review job title*/
+  --red: #a02635; /* error */
+  --sapphire: #2f4696; /* review pagiantion, login */
+  --white: #ffffff; /* right bg, review text*/
+  --woodsmoke: #151617; /* left heading, right heading, input text*/
+}
