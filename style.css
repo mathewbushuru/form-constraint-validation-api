@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
   --blue: #3c37ff; /* btn, logo*/
   --catskillWhite: #f3f5f9; /* left bg*/
   --clay: #2d3345; /* review bg*/
-  --ghost: #adb4c1; /* whole bg*/
+  --ghost: #b8bccb; /* whole bg*/
   --green: #35a026; /*success */
   --raven: #787d87; /* left secondary text, review job title*/
   --red: #a02635; /* error */
@@ -16,4 +16,191 @@
 body {
   background-color: var(--ghost);
   font-family: Inter, Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+.signupContainer {
+  background-color: var(--white);
+  max-width: 900px;
+  max-height: 100vh;
+  overflow-y: scroll;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.desc {
+  background-color: var(--catskillWhite);
+  padding: 18px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.desc .logo {
+  background-color: var(--blue);
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+}
+.desc .hero h2 {
+  font-weight: 500;
+  color: var(--woodsmoke);
+  font-size: 28px;
+  line-height: 1.35;
+}
+.desc .hero p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--raven);
+  padding-right: 54px;
+}
+.desc .review {
+  background-color: var(--clay);
+  border-radius: 12px;
+  padding: 18px;
+}
+.desc .review p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--catskillWhite);
+}
+.desc .reviewer {
+  display: grid;
+  grid-template-columns: 65px 135px;
+  column-gap: 8px;
+  row-gap: 4px;
+  align-items: center;
+}
+.desc .reviewer img {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+  grid-row: 1/3;
+}
+.desc .reviewer .reviewerName {
+  align-self: self-end;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--catskillWhite);
+}
+.desc .reviewer .reviewerTitle {
+  align-self: start;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--raven);
+}
+
+.signupForm {
+  padding: 18px;
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.signupForm .intro h3 {
+  margin: 0;
+  font-weight: 500;
+  color: var(--woodsmoke);
+  font-size: 24px;
+  line-height: 1.35;
+}
+.signupForm .intro p {
+  margin: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--raven);
+}
+.signupForm .inpSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.signupForm .inpSection label {
+  color: var(--raven);
+  font-size: 14px;
+  font-weight: 500;
+}
+.signupForm .inpSection input {
+  padding: 8px 12px;
+  font: inherit;
+  font-weight: 400;
+  border: 1px solid var(--raven);
+  border-radius: 8px;
+}
+.signupForm .inpSection input:focus {
+  outline: none;
+}
+.signupForm button {
+  background-color: var(--blue);
+  color: var(--catskillWhite);
+  padding: 8px 12px;
+  font: inherit;
+  font-weight: 400;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.signupForm button:hover {
+  opacity: 90%;
+}
+.signupForm .loginLink {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--raven);
+}
+.signupForm .loginLink span{
+    color: var(--sapphire);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@media screen and (min-width: 767px) {
+  body {
+    align-items: center;
+  }
+  .signupContainer {
+    border-radius: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .desc {
+    padding-top: 24px;
+    gap: 32px;
+  }
+  .desc .hero h2 {
+    font-size: 26px;
+  }
+  .desc .hero p {
+    padding-right: 64px;
+  }
+  .signupForm {
+    padding-left: 36px;
+  }
+  .signupForm .intro p {
+    padding-bottom: 18px;
+  }
+  .signupForm .inpSection input {
+    padding: 12px 12px;
+  }
+  .signupForm button {
+    padding: 12px 12px;
+  }
 }

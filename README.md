@@ -7,6 +7,8 @@ Uses JavaScript's constraint validation API to inform user of the validations st
 Design credit: [Dribbble](https://dribbble.com/shots/20453169-Get-Started-Screen)
 
 ##### Roadmap
+- [x] HTML Markup + CSS styling
+- [x] Mobile responsive
 - [ ] Default validation with HTML 5 inputs
 - [ ] Valid / invalid CSS styling
 - [ ] Add custom validation messages 
